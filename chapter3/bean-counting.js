@@ -27,10 +27,10 @@ return count
 
 console.log(countChars("BBC", "B"));
 
-// The same function counting letter ignoring the case
+// Case ignored, counting each occurrence
 
 function countChars(str, char) {
-  var strUpper = str.toUpperCase();     //to upper case as lower case can't make a roun trip (after CA1308)
+  var strUpper = str.toUpperCase();     //Normalized to upper case, as by CA1308 standard lower case can't make a round trip
   var charUpper = char.toUpperCase();
   var count = 0
   for (var i = 0; i < str.length; i++) {
