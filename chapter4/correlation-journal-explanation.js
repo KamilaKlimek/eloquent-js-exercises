@@ -22,10 +22,10 @@ function tableFor(event, journal) {
   var table = [0, 0, 0, 0];
   for (var i=0; i<journal.length; i++) {
     var entry = journal[i], index = 0;
-    if (hasEvent(event, entry)) { //
+    if (hasEvent(event, entry)) { 
       index += 1;
     }
-    if (entry.squirrel) { //true or false: changed into sqrl?
+    if (entry.squirrel) { 
       index += 2;
     }
     table[index] += 1
