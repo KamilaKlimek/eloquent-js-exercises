@@ -1,6 +1,7 @@
 /*Use the reduce methos in combination with the concat method to "flatten"
 *an array of arrays int a single array that has all the elements of 
-*/ the input arrays.
+* the input arrays.
+*/
 
 var arrays = [[1,2,3], [4,5], [6]];
 
